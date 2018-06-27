@@ -1,0 +1,19 @@
+version: "3"
+services:
+  app:
+    build: .
+    links:
+      - db
+    command: bash -c "sleep 15 && python /app/app.py"
+    ports:
+      - "8000:8000"
+
+  db:
+    image: mysql:5.6
+    ports:
+      - "3306:3306"
+    environment:
+     MYSQL_ROOT_PASSWORD: 'octopus'
+     MYSQL_DATABASE: 'octopus'
+     MYSQL_USER: 'octopus'
+     MYSQL_PASSWORD: 'octopus'

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List of words</title>
+</head>
+<body>
+
+<div> WORDS: </div>
+<ul>
+{% for record in all_words %}
+    <li><p>{{ record.enc_text}} - {{ record.freq}}</p></li>
+{% end %}
+</ul>
+
+<div> URLS: </div>
+<ul>
+{% for url in all_urls %}
+    <li><p>{{ url.url}} analyse : {{ url.sentiment_analysis}}</p></li>
+{% end %}
+</ul>
+</body>
+</html>
