@@ -10,7 +10,7 @@ peewee==2.10.2
 peewee-async==0.5.12
 pycrypto==2.6.1
 PyMySQL==0.8.1
-PyYAML==3.12
+PyYAML==5.4
 requests==2.19.1
 shellescape==3.4.1
 tornado==5.0.2
