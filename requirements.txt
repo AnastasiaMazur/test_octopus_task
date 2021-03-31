@@ -4,7 +4,7 @@ certifi==2018.4.16
 chardet==3.0.4
 crypto==1.4.1
 idna==2.7
-lxml==4.2.2
+lxml==4.6.3
 Naked==0.1.31
 peewee==2.10.2
 peewee-async==0.5.12
